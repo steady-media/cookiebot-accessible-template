@@ -279,14 +279,14 @@
   border-radius: 3px;
   font-weight: bold;
   font-size: 15px;
-  border: 2px solid #0f0f0f;
+  border: 2px solid #291E38;
   /* legacy browser compatibility end */
   background: var(--cb-button-background, transparent);
   border-radius: var(--cb-button-border-radius, 3px);
   font-weight: var(--cb-button-font-weight, bold);
   font-size: var(--cb-button-font-size, 15px);
   font-family: var(--cb-button-font-family);
-  border: var(--cb-button-border, 2px solid #0f0f0f);
+  border: var(--cb-button-border, 2px solid #291E38);
   display: block;
   padding: 16px 24px;
   text-align: center;
@@ -298,7 +298,7 @@
 #CookieBanner .cookiebanner__buttons__accept {
   color: var(--cb-accept-button-color, #FFF);
   background: var(--cb-accept-button-background, #291E38);
-  border: var(--cb-accept-button-border, var(--cb-button-border, 2px solid #0f0f0f));
+  border: var(--cb-accept-button-border, var(--cb-button-border, 2px solid #291E38));
 }
 
 #CookieBanner .cookiebanner__buttons__accept:hover,
@@ -310,7 +310,7 @@
   /* legacy browser compatibility end */
   color: var(--cb-accept-button-active-color, var(--cb-button-active-color, #fff));
   background: var(--cb-accept-button-active-background, var(--cb-button-active-background, #585266));
-  border: var(--cb-accept-button-active-border, var(--cb-accept-button-border, var(--cb-button-active-border, var(--cb-button-border, 2px solid #0f0f0f))));
+  border: var(--cb-accept-button-active-border, var(--cb-accept-button-border, var(--cb-button-active-border, var(--cb-button-border, 2px solid #291E38))));
 }
 
 #CookieBanner .cookiebanner__buttons__deny:hover,
@@ -320,7 +320,7 @@
   background: #ebebf7;
   /* legacy browser compatibility end */
   background: var(--cb-button-active-background, #ebebf7);
-  border: var(--cb-button-active-border, var(--cb-button-border, 2px solid #0f0f0f));
+  border: var(--cb-button-active-border, var(--cb-button-border, 2px solid #291E38));
 }
 
 /**
@@ -599,7 +599,7 @@
 #CookieBanner .cookiebanner__accept-selection {
   /* legacy browser compatibility */
   background: transparent;
-  border: 2px solid #0f0f0f;
+  border: 2px solid #291E38;
   border-radius: 3px;
   font-size: 15px;
   font-weight: bold;
@@ -607,7 +607,7 @@
   border-radius: var(--cb-button-border-radius, 3px);
   background: var(--cb-button-background, transparent);
   font-weight: var(--cb-button-font-weight, bold);
-  border: var(--cb-button-border, 2px solid #0f0f0f);
+  border: var(--cb-button-border, 2px solid #291E38);
   font-size: var(--cb-button-font-size, 15px);
   font-family: var(--cb-button-font-family);
   display: block;
@@ -631,7 +631,7 @@
   background: #ebebf7;
   /* legacy browser compatibility end */
   background: var(--cb-button-active-background, #ebebf7);
-  border: var(--cb-button-active-border, var(--cb-button-border, 2px solid #0f0f0f));
+  border: var(--cb-button-active-border, var(--cb-button-border, 2px solid #291E38));
 }
 
 /**
