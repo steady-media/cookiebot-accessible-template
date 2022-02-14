@@ -479,15 +479,30 @@
   text-decoration: underline;
 }
 
+#CookieBanner .cookiebanner__preference__toggle__arrow {
+  visibility: hidden;
+}
+
 @media (max-width: 539px) {
   #CookieBanner .cookiebanner__preference__toggle {
     flex-shrink: 0;
     display: block;
     text-align: center;
+    text-decoration: none;
     width: 100%;
     margin-top: 16px;
     margin-left: 0;
   }
+
+  #CookieBanner .cookiebanner__preference__toggle__text {
+    visibility: hidden;
+  }
+
+  #CookieBanner .cookiebanner__preference__toggle__arrow {
+    visibility: visible;
+    font-weight: bold;
+  }
+
 }
 
 #CookieBanner .cookiebanner__preference__toggle:hover,
