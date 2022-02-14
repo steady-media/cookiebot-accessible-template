@@ -257,7 +257,7 @@
 
 #CookieBanner .cookiebanner__buttons__details {
   /* legacy browser compatibility */
-  font-size: 15px;
+  font-size: 16px;
   /* legacy browser compatibility end */
   font-size: var(--cb-details-button-font-size, 15px);
   padding: 8px 16px;
@@ -269,6 +269,14 @@
 #CookieBanner .cookiebanner__buttons__details:active {
   color: #585266;
   text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  #CookieBanner .cookiebanner__buttons__details {
+    width: auto;
+    padding: 8px 2px;
+    float: right;
+  }
 }
 
 #CookieBanner .cookiebanner__buttons__accept,
