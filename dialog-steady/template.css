@@ -159,8 +159,6 @@
  * Content
  */
 
-#CookieBanner .cookiebanner__main {}
-
 #CookieBanner .cookiebanner__main__inner {
   /* legacy browser compatibility */
   max-width: 1080px;
@@ -178,10 +176,6 @@
     width: 288px;
     float: right;
   }
-}
-
-#CookieBanner .cookiebanner__main__content {
-
 }
 
 @media (min-width: 800px) {
@@ -271,7 +265,7 @@
   text-decoration: underline;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 539px) {
   #CookieBanner .cookiebanner__buttons__details {
     width: auto;
     padding: 8px 2px;
@@ -377,14 +371,9 @@
 }
 
 #CookieBanner .cookiebanner__preference__heading {
+  display: flex;
+  align-items: center;
 }
-
-
-  #CookieBanner .cookiebanner__preference__heading {
-    display: flex;
-    align-items: center;
-  }
-
 
 #CookieBanner .cookiebanner__preference {
   background: #f4f4f4;
@@ -446,13 +435,9 @@
 #CookieBanner .cookiebanner__preference__text {
   display: block;
   margin-top: 12px;
+  margin-left: 16px;
+  margin-top: 0;
 }
-
-
-  #CookieBanner .cookiebanner__preference__text {
-    margin-left: 16px;
-    margin-top: 0;
-  }
 
 
 #CookieBanner .cookiebanner__preference__title {
