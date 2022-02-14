@@ -637,7 +637,7 @@
   width: 288px;
 }
 
-@media (max-width: 799px) {
+@media (min-width: 539px) and (max-width: 799px) {
   #CookieBanner .cookiebanner__accept-selection {
     min-width: 288px;
     width: 100%;
