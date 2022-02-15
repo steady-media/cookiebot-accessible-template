@@ -464,6 +464,7 @@
 
 #CookieBanner .cookiebanner__preference__toggle__arrow {
   visibility: hidden;
+  transition: all .2s;
 }
 
 @media (max-width: 539px) {
@@ -487,7 +488,6 @@
 
   #CookieBanner button[aria-expanded="true"] .cookiebanner__preference__toggle__arrow {
     transform: rotate(180deg);
-    transition: all .2s;
   }
 
 }
