@@ -657,3 +657,15 @@
 #CookieBanner .cookiebanner__details__updated p {
   font-size: 15px;
 }
+
+/**
+ * Show / Hide details
+ */
+
+#CookieBanner button[aria-expanded="false"] .text_expanded {
+  display: none;
+}
+
+#CookieBanner button[aria-expanded="true"] .text_collapsed {
+  display: none;
+}
