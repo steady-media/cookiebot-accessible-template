@@ -128,7 +128,7 @@
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
+      -ms-user-select: none;  
 }
 
 #CookieBanner button > * {
@@ -275,53 +275,56 @@
 #CookieBanner .cookiebanner__buttons__accept,
 #CookieBanner .cookiebanner__buttons__deny,
 #CookieBanner .cookiebanner__accept-selection {
-  /* legacy browser compatibility */
-  background: transparent;
-  border-radius: 3px;
-  font-weight: bold;
-  font-size: 15px;
-  border: 2px solid #291E38;
-  /* legacy browser compatibility end */
-  background: var(--cb-button-background, transparent);
-  border-radius: var(--cb-button-border-radius, 3px);
-  font-weight: var(--cb-button-font-weight, bold);
-  font-size: var(--cb-button-font-size, 15px);
-  font-family: var(--cb-button-font-family);
-  border: var(--cb-button-border, 2px solid #291E38);
-  display: block;
-  padding: 16px 24px;
-  text-align: center;
+  font-size: .67rem;
+  line-height: calc(2.67rem - 2px);
   text-transform: uppercase;
-  width: 100%;
+  letter-spacing: .12em;
+  text-align: center;
+  cursor: pointer;
+  height: 2.67rem;
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 1px;
+  text-decoration: none;
+  display: inline-block;
+  padding: 0 20px;
+  transition: border .2s ease 0s,color .2s ease 0s,background-color .2s ease 0s,box-shadow .2s ease 0s;
+  white-space: nowrap;
   min-width: 288px;
+  width: 100%;
 }
 
 #CookieBanner .cookiebanner__buttons__accept {
-  color: var(--cb-accept-button-color, #FFF);
-  background: var(--cb-accept-button-background, #291E38);
-  border: var(--cb-accept-button-border, var(--cb-button-border, 2px solid #291E38));
+  box-shadow: 0 0 16px rgb(41 30 56 / 30%);
+  border: 1px solid #291e38;
+  background-color: #291e38;
+  color: #fff;
+}
+#CookieBanner .cookiebanner__buttons__deny, #CookieBanner .cookiebanner__accept-selection {
+  border: 1px solid #9a95a6;
+  background-color: transparent;
+  color: #291e38;
+  box-shadow: 0 0 0;
 }
 
 #CookieBanner .cookiebanner__buttons__accept:hover,
 #CookieBanner .cookiebanner__buttons__accept:focus,
 #CookieBanner .cookiebanner__buttons__accept:active {
-  /* legacy browser compatibility */
+  box-shadow: 0 0 16px rgb(88 82 102 / 30%);
+  border: 1px solid #585266;
+  background-color: #585266;
   color: #fff;
-  background: #585266;
-  /* legacy browser compatibility end */
-  color: var(--cb-accept-button-active-color, var(--cb-button-active-color, #fff));
-  background: var(--cb-accept-button-active-background, var(--cb-button-active-background, #585266));
-  border: var(--cb-accept-button-active-border, var(--cb-accept-button-border, var(--cb-button-active-border, var(--cb-button-border, 2px solid #291E38))));
 }
 
 #CookieBanner .cookiebanner__buttons__deny:hover,
 #CookieBanner .cookiebanner__buttons__deny:focus,
-#CookieBanner .cookiebanner__buttons__deny:active {
-  /* legacy browser compatibility */
-  background: #ebebf7;
-  /* legacy browser compatibility end */
-  background: var(--cb-button-active-background, #ebebf7);
-  border: var(--cb-button-active-border, var(--cb-button-border, 2px solid #291E38));
+#CookieBanner .cookiebanner__buttons__deny:active,
+#CookieBanner .cookiebanner__accept-selection:hover,
+#CookieBanner .cookiebanner__accept-selection:focus,
+#CookieBanner .cookiebanner__accept-selection:active {
+  border: 1px solid #9a95a6;
+  background-color: #ebebf7;
+  color: #291e38;
 }
 
 /**
@@ -602,31 +605,16 @@
   margin-top: 8px;
 }
 
-#CookieBanner .cookiebanner__accept-selection {
-  /* legacy browser compatibility */
-  background: transparent;
-  border: 2px solid #291E38;
-  border-radius: 3px;
-  font-size: 15px;
-  font-weight: bold;
-  /* legacy browser compatibility end */
-  border-radius: var(--cb-button-border-radius, 3px);
-  background: var(--cb-button-background, transparent);
-  font-weight: var(--cb-button-font-weight, bold);
-  border: var(--cb-button-border, 2px solid #291E38);
-  font-size: var(--cb-button-font-size, 15px);
-  font-family: var(--cb-button-font-family);
-  display: block;
-  padding: 16px 24px;
-  text-align: center;
-  float: right;
-  width: 288px;
-}
-
-@media (min-width: 539px) and (max-width: 799px) {
+@media (min-width: 539px) and (max-width: 767px) {
   #CookieBanner .cookiebanner__accept-selection {
     min-width: 288px;
     width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  #CookieBanner .cookiebanner__accept-selection {
+    width: auto;
   }
 }
 
